@@ -1,0 +1,225 @@
+{% extends "blog/base.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+ 
+/* Create three equal columns that floats next to each other */
+.column {
+  float: center;
+  width: 33.33%;
+  padding: 10px;
+  height: 100px; /* Should be removed. Only for demonstration */
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+ 
+<h2><p style="text-align:center;">Welcome to ICS Security Testbed!</p></h2>
+ 
+<div class="row">
+
+<!-- COLUMN 1 -->
+    <div class="column" style="background-color:rgb(219, 196, 94);">
+        <h2><p style="text-align:center;">Raspberry Pi Commands</p></h2>
+        <p>Some text..</p> 
+        
+        <!-- Toggle Button -->
+
+      <style>
+
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+        }
+        
+        .switch input { 
+          opacity: 0;
+          width: 0;
+          height: 0;
+        }
+        
+        .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgb(240, 10, 10);
+          -webkit-transition: .4s;
+          transition: .4s;
+        }
+        
+        .slider:before {
+          position: absolute;
+          content: "";
+          height: 26px;
+          width: 26px;
+          left: 4px;
+          bottom: 4px;
+          background-color: rgb(5, 5, 5);
+          -webkit-transition: .3s;
+          transition: .3s;
+        }
+        
+        input:checked + .slider {
+          background-color: #11e02d;
+        }
+        
+        input:focus + .slider {
+          box-shadow: 0 0 1px #11e02d;
+        }
+        
+        input:checked + .slider:before {
+          -webkit-transform: translateX(26px);
+          -ms-transform: translateX(26px);
+          transform: translateX(26px);
+        }
+        
+        /* Rounded sliders */
+        .slider.round {
+          border-radius: 34px;
+        }
+        
+        .slider.round:before {
+          border-radius: 50%;
+        }
+      </style>
+      <p style="margin:auto;"></p>
+      </head>
+      <body>
+      <h>OFF</h>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <h>ON</h>
+      </body>
+
+    </div>
+
+<!-- COLUMN 2 -->
+    <div class="column" style="background-color:rgb(209, 195, 195);">
+      <h2><p style="text-align:center;">Conveyor Belt Output</p></h2>
+      <p>Some text..</p> 
+
+      <!-- Select File.. button -->
+      <style>
+        .btn {
+          border: none;
+          background-color: rgb(73, 204, 12);
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .btn:hover {background: rgb(4, 90, 26);}
+
+        .run {color:run;}
+        </style>
+        <button class="btn success">Select File..</button>
+
+        <!-- Run Button -->
+        <style>
+        .btn {
+          border: none;
+          background-color: rgb(73, 204, 12);
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .btn:hover {background: rgb(4, 90, 26);}
+
+        .run {color:run;}
+        </style>
+        <button class="btn success">Run</button>
+
+      <form action="/action_page.php">
+        <label for="quantity"><br>RPM Count:</label>
+        <input type="text" id="quantity" name="quantity" style="width: 8.5em">
+      
+      </form>
+
+
+    </div>
+
+
+<!-- COLUMN 3 -->
+    <div class="column" style="background-color:rgb(189, 192, 37);">
+      <h2><p style="text-align:center;">Robotic Arm Output</p></h2>
+      <p>Some text..</p>
+
+      <!-- Select File.. button -->
+        <style>
+        .btn {
+          border: none;
+          background-color: rgb(73, 204, 12);
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .btn:hover {background: rgb(4, 90, 26);}
+
+        .run {color:run;}
+        </style>
+        <button class="btn success">Select File..</button>
+
+        <!-- Run Button -->
+        <style>
+        .btn {
+          border: none;
+          background-color: rgb(73, 204, 12);
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .btn:hover {background: rgb(4, 90, 26);}
+
+        .run {color:run;}
+        </style>
+        <button class="btn success">Run</button>
+
+    </div>
+
+</div> 
+
+
+<!-- ````````````````````````````````````````````` -->
+<!-- 
+	<div data-pym-src=
+"https://www.jdoodle.com/embed/v0/2IhG?stdin=1&arg=0">
+	</div>
+
+  This script tag contains the
+		javascript code in the written URL -->
+	<!-- <script src=
+  "https://www.jdoodle.com/assets/jdoodle-pym.min.js"
+		type="text/javascript">
+	</script> -->
+
+</body>
+</html>
+{% endblock content %}
