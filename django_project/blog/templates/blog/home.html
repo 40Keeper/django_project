@@ -7,35 +7,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-* {
-  box-sizing: border-box;
-}
+    * {
+      box-sizing: border-box;
+    }
  
-/* Create three equal columns that floats next to each other */
-.column {
-  float: center;
-  width: 33.33%;
-  padding: 10px;
-  height: 100px; /* Should be removed. Only for demonstration */
-}
- 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    .layout {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box {
+      width: auto;
+      height: 300px;
+    }
 </style>
 </head>
 <body>
  
 <h2><p style="text-align:center;">Welcome to ICS Security Testbed!</p></h2>
- 
-<div class="row">
-
 
 <!-- COLUMN 1 -->
-    <div class="column; width:200px">
+<div class="layout">
+    <div class="box">
         <h2><p style="text-align:center; background-color:rgb(219, 196, 94); width:250px">Raspberry Pi Commands</p></h2>
 
         <!-- Toggle Button -->
@@ -102,22 +97,26 @@
           border-radius: 50%;
         }
       </style>
+
       <p style="margin:auto;"></p>
+
       </head>
       <body>
+
       <h>OFF</h>
       <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
       </label>
       <h>ON</h>
+
       </body>
 
     </div>
     
 
 <!-- COLUMN 2 -->
-    <div class="column; width:250px">
+    <div class="box">
       <h2><p style="text-align:center;background-color:rgb(209, 195, 195); width:250px">Conveyor Belt Output</p></h2>
 
       <!-- Select File.. button -->
@@ -154,10 +153,11 @@
         </style>
         <button class="btn success">Run</button>
 
+      
+        <!-- RPM Count -->
       <form action="/action_page.php">
         <label for="quantity"><br>RPM Count:</label>
-        <input type="text" id="quantity" name="quantity" style="width: 8.5em">
-      
+        <input type="text" id="quantity" name="quantity" style="width: 8.5em" disabled>
       </form>
 
 
@@ -165,7 +165,7 @@
 
 
 <!-- COLUMN 3 -->
-    <div class="column;width:200px">
+    <div class="box">
       <h2><p style="text-align:center; background-color:rgb(189, 192, 37);width:250px">Robotic Arm Output</p></h2>
 
       <!-- Select File.. button -->
@@ -203,21 +203,30 @@
         <button class="btn success">Run</button>
 
     </div>
-<!-- ROW 1 ENDS -->
-</div> 
+
+    <div class="box">
+    <!-- CONVEYOR BELT VIDEO -->
+    <video src="../../../media/ConveyorBelt.mp4" width="330" height="275" controls loop muted poster="../../../media/ConveyorThumbnail.jpeg"></video>
+    </div>
+
+    <!-- ROW 1 ENDS -->
+    </div> 
+    <br>
+    <br>
+    <!-- TESTBED SCHEMATIC IMAGE -->
+
+    <div class="layout">
+      <div class="box;" width="650px">
+              <div class="content-section">
+                <h3 style="text-align:center">Testbed Schematic</h3>
+                <img src="../../media/schematic.jpg" style="height:325px ; width:600px;">   
+      </div>
+
+    </div>
 
 
-<!-- TESTBED SCHEMATIC IMAGE -->
-           <div class="content-section">
-            <h3 style="text-align:center">Testbed Schematic</h3>
-            <img src="../../media/schematic.jpg" style="height:325px ; width:650px;">   
-           </div>
-
-<!-- CONVEYOR BELT VIDEO -->
-<video src="../../../media/ConveyorBelt.mp4" width="400" height="275" controls loop muted poster="../../../media/ConveyorThumbnail.jpeg"></video>
 
 <!-- COMMAND LINE INTERFACE -->
-
 
 </body>
 </html>

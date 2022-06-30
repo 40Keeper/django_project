@@ -32,6 +32,7 @@ body {
     position: relative;
     /* left: 200px; */
     background: #ffffff;
+    width: 650px;
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
