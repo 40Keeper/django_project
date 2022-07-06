@@ -140,15 +140,9 @@
 
         .run {color:run;}
         </style>
-        <button onclick="runScript()" class="btn success">Run</button>
+        
 
-        <script>
-          function runScript()
-          {
-            
-          }
-        </script>
-
+        <button class="btn success" onclick="location.href='{% url 'script' %}'">Run</button>
       
         <!-- RPM Count -->
       <form action="/action_page.php">
@@ -185,7 +179,7 @@
 
         .run {color:run;}
         </style>
-        <button class="btn success">Run</button>
+        <button class="btn success" onclick="location.href='{% url 'script' %}'">Run</button>
 
     </div>
 
