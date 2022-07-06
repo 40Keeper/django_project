@@ -14,7 +14,7 @@ def home(request):
 
 #Gets executed when Run button is clicked
 def runbutton(request):
-    exec(open("/home/nips/newproject/django_project/blog/testing.py").read())     #WHY CAN'T I SEE THIS BEING EXECUTED IN THE TERMINAL??????
+    exec(open("/home/nips/newproject/django_project/blog/python_scripts/testing.py").read())     #WHY CAN'T I SEE THIS BEING EXECUTED IN THE TERMINAL??????
     return render(request,'blog/runpage.html')
 
 def about(request):
