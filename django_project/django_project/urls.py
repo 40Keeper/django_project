@@ -29,6 +29,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name = 'users/logout.html'), name = "logout"),
     path('', blog_views.home, name = "home"),
     path('home/', blog_views.home, name = "home"),
-    path('run/',blog_views.runbutton, name="script")
+    path('run1',blog_views.runbutton1, name="script1"),
+    path('run2/',blog_views.runbutton2, name="script2")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
