@@ -14,11 +14,11 @@ def home(request):
 
 #Gets executed when Run button is clicked
 def runbutton1(request):
-    exec(open("/home/nips/newproject/django_project/blog/python_scripts/sshconnectiontest1.py").read())  
+    exec(open("/home/nips/newproject/django_project/blog/python_scripts/testing.py").read())  
     return render(request,'blog/runpage.html')
 
 def runbutton2(request):
-    exec(open("/home/nips/newproject/django_project/blog/python_scripts/sshconnectiontest2.py").read())
+    exec(open("/home/nips/newproject/django_project/blog/python_scripts/testing.py").read())
     return render(request,'blog/runpage.html')
 
 def about(request):
