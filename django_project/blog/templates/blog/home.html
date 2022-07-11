@@ -145,10 +145,10 @@
         <button class="btn success" onclick="location.href='{% url 'script1' %}'">Run</button>
       
         <!-- RPM Count -->
-      <form action="/action_page.php">
+      <!-- <form action="/action_page.php">
         <label for="quantity"><br>RPM Count:</label>
         <input type="text" id="quantity" name="quantity" style="width: 8.5em" disabled>
-      </form>
+      </form> -->
 
 
     </div>
@@ -180,6 +180,38 @@
         .run {color:run;}
         </style>
         <button class="btn success" onclick="location.href='{% url 'script2' %}'">Run</button>
+
+    </div>
+
+    <!-- CONVEYOR SENSOR -->
+    <div class="box text-center">
+      <h2><p style="text-align:center;background-color:rgb(209, 195, 195); width:300px">Conveyor Belt Sensor</p></h2>
+        
+        <!-- Run Button -->
+        <style>
+        .btn {
+          border: none;
+          background-color: rgb(73, 204, 12);
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .btn:hover {background: rgb(4, 90, 26);}
+
+        .run {color:run;}
+        </style>
+        
+
+        <button class="btn success" onclick="location.href='{% url 'script3' %}'">Run</button>
+      
+        <!-- RPM Count -->
+      <form action="/action_page.php">
+        <label for="quantity"><br>RPM Count:</label>
+        <input type="text" id="quantity" name="quantity" style="width: 8.5em" disabled>
+      </form>
+
 
     </div>
 
