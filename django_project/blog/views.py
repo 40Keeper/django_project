@@ -22,7 +22,7 @@ def runbutton2(request):
     return render(request,'blog/runpage.html')
 
 def runbutton3(request):
-    exec(open("/home/nips/newproject/django_project/blog/python_scripts/sshconnectiontest1_1.py").read())
+    exec(open("/home/nips/newproject/django_project/blog/python_scripts/sshconnectiontest3.py").read())
     return render(request,'blog/runpage.html')
 
 def about(request):

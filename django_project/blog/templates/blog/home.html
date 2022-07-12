@@ -215,9 +215,24 @@
 
     </div>
 
-    <div class="box">
     <!-- CONVEYOR BELT VIDEO -->
+    <div class="box" id="playVideo">
     <video src="../../../media/ConveyorBelt.mp4" width="330" height="275" controls loop muted poster="../../../media/ConveyorThumbnail.jpeg"></video>
+    <script>
+      function playVideo()
+      {
+        if(window.location.href == "run1" || "run2" ||"run3")
+          {
+            vidoe.load()
+            video.play()
+          }
+        
+        else
+          {
+            <video src="../../../media/ConveyorBelt.mp4" width="330" height="275" loop muted poster="../../../media/ConveyorThumbnail.jpeg"></video>
+          }
+      }
+    </script>
     </div>
 
     <!-- ROW 1 ENDS -->
