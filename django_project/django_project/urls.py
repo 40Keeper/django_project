@@ -30,6 +30,7 @@ urlpatterns = [
     path('', blog_views.home, name = "home"),
     path('home/', blog_views.home, name = "home"),
     path('run1/',blog_views.runbutton1, name="script1"),
+    # path('run1/',blog_views.startbutton, name="runb1"),
     path('run2/',blog_views.runbutton2, name="script2"),
     path('run3/',blog_views.runbutton3, name="script3")
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
