@@ -142,8 +142,28 @@
         </style>
         
 
-        <button class="btn success" onclick="location.href='{% url 'script1' %}'">Run</button>
+        <button class="btn success" onclick="location.href='{% url 'run_robot' %}'">Run</button>
       
+      <!-- STOP Robot -->
+        <style>
+          .btn {
+            border: none;
+            background-color: rgb(73, 204, 12);
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+          }
+  
+          .btn:hover {background: rgb(4, 90, 26);}
+  
+          .run {color:run;}
+          </style>
+          
+  
+          <button class="btn success" onclick="location.href='{% url 'stop_robot' %}'">Stop</button>
+
+
         <!-- RPM Count -->
       <!-- <form action="/action_page.php">
         <label for="quantity"><br>RPM Count:</label>
@@ -161,28 +181,55 @@
     <div class="box text-center">
       <h2><p style="text-align:center; background-color:rgb(189, 192, 37);width:280px">Conveyor Belt Command</p></h2>
 
-      <!-- Browse Button 2 button -->
-        <!-- <input type="file" id="file">
+      <!-- DropDown Menu for RPM -->
 
-        <br>
-        <br> -->
+      <label for="delay">Choose Delay: </label>
+      <select name="delay" id="delay">
+        <option value="0.008">0.008</option>
+        <option value="0.007">0.007</option>
+        <option value="0.006">0.006</option>
+        <option value="0.005">0.005</option>
+        <option value="0.009">0.009</option>
+        <option value="0.01">0.01</option>
+      </select>
 
-        <!-- Run Button -->
-        <style>
-        .btn {
-          border: none;
-          background-color: rgb(73, 204, 12);
-          padding: 14px 28px;
-          font-size: 16px;
-          cursor: pointer;
-          display: inline-block;
-        }
+      <br>
 
-        .btn:hover {background: rgb(4, 90, 26);}
+      <!-- Run Button -->
+      <style>
+      .btn {
+        border: none;
+        background-color: rgb(73, 204, 12);
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+      }
 
-        .run {color:run;}
-        </style>
-        <button class="btn success" onclick="location.href='{% url 'script2' %}'">Run</button>
+      .btn:hover {background: rgb(4, 90, 26);}
+
+      .run {color:run;}
+      </style>
+      <button class="btn success" onclick="location.href='{% url 'run_conveyor' %}'">Run</button>
+
+      <!-- Run Button -->
+      <style>
+      .btn {
+        border: none;
+        background-color: rgb(73, 204, 12);
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      .btn:hover {background: rgb(4, 90, 26);}
+
+      .run {color:run;}
+      </style>
+      <button class="btn success" onclick="location.href='{% url 'stop_conveyor' %}'">Stop</button>
+      
+        
 
     </div>
 
