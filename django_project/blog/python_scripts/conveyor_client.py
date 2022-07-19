@@ -18,11 +18,3 @@ while True:
     client_socket.sendall(command.encode())
     if command==STOP:
         break
-    
-        
-# command1=[SPEED,0.009]
-# command1=str(command1)
-# client_socket.send(command1.encode())
-# time.sleep(10)
-# client_socket.send(STOP.encode())
-

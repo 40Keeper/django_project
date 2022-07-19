@@ -28,7 +28,7 @@
  
 <h2><p style="text-align:center;">Welcome to ICS Security Testbed!</p></h2>
 
-<!-- COLUMN 1 -->
+<!-- BOX 1 -->
 <div class="layout">
     <div class="box text-center">
         <h2><p style="text-align:center; background-color:rgb(219, 196, 94); width:250px">Raspberry Pi Commands</p></h2>
@@ -115,17 +115,11 @@
     </div>
     
 
-<!-- COLUMN 2 -->
+<!-- BOX 2 -->
     <div class="box text-center">
       <h2><p style="text-align:center;background-color:rgb(209, 195, 195); width:300px">Robotic Arm Command</p></h2>
 
-      <!-- Browse Button 2 button -->
-        <!-- <input type="file" id="file">
-
-        <br>
-        <br> -->
-        
-        <!-- Run Button -->
+      <!-- Robotic Arm "Run" Button -->
         <style>
         .btn {
           border: none;
@@ -141,10 +135,95 @@
         .run {color:run;}
         </style>
         
-
         <button class="btn success" onclick="location.href='{% url 'run_robot' %}'">Run</button>
+
+
+      <!-- Robotic Arm "Stop" Button -->
+        <style>
+        .btn {
+          border: none;
+          background-color: rgb(73, 204, 12);
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .btn:hover {background: rgb(4, 90, 26);}
+
+        .run {color:run;}
+        </style>
+        
+        <button class="btn success" onclick="location.href='{% url 'stop_robot' %}'">Stop</button>
+
+    </div>
+
+
+
+
+<!-- BOX 3 -->
+    <div class="box text-center">
+      <h2><p style="text-align:center; background-color:rgb(189, 192, 37);width:280px">Conveyor Belt Command</p></h2>
+    
+      <!-- DropDown Menu for Conveyor Delay -->
+
+      <form action="PageObjects" method="post">
+        <label for="delay">Choose Delay: </label>
+        <select name="delay_dropdown" id="delay_">
+          <option value="0.008">0.008</option>
+          <option value="0.007">0.007</option>
+          <option value="0.006">0.006</option>
+          <option value="0.005">0.005</option>
+          <option value="0.009">0.009</option>
+          <option value="0.01">0.01</option>
+        </select>
+      </form>
+
+      <br>
+
+      <!-- Conveyot Belt "Run" Button -->
+      <style>
+        .btn {
+          border: none;
+          background-color: rgb(73, 204, 12);
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .btn:hover {background: rgb(4, 90, 26);}
+
+        .run {color:run;}
+      </style>
+      <button class="btn success" onclick="location.href='{% url 'run_conveyor' %}'">Run</button>
+
+
+      <!-- Conveyor Belt Stop Button -->
+      <style>
+        .btn {
+          border: none;
+          background-color: rgb(73, 204, 12);
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .btn:hover {background: rgb(4, 90, 26);}
+
+        .run {color:run;}
+      </style>
+      <button class="btn success" onclick="location.href='{% url 'stop_conveyor' %}'">Stop</button>
       
-      <!-- STOP Robot -->
+    </div>
+
+
+<!-- BOX 4 -->
+    <div class="box text-center">
+      <h2><p style="text-align:center;background-color:rgb(209, 195, 195); width:300px">Speed Sensor Output</p></h2>
+        
+        <!-- Conveyor Sensor "Run" Button -->
         <style>
           .btn {
             border: none;
@@ -154,109 +233,15 @@
             cursor: pointer;
             display: inline-block;
           }
-  
+
           .btn:hover {background: rgb(4, 90, 26);}
-  
+
           .run {color:run;}
-          </style>
-          
-  
-          <button class="btn success" onclick="location.href='{% url 'stop_robot' %}'">Stop</button>
-
-
-        <!-- RPM Count -->
-      <!-- <form action="/action_page.php">
-        <label for="quantity"><br>RPM Count:</label>
-        <input type="text" id="quantity" name="quantity" style="width: 8.5em" disabled>
-      </form> -->
-
-
-
-    </div>
-
-
-
-
-<!-- COLUMN 3 -->
-    <div class="box text-center">
-      <h2><p style="text-align:center; background-color:rgb(189, 192, 37);width:280px">Conveyor Belt Command</p></h2>
-
-      <!-- DropDown Menu for RPM -->
-
-      <label for="delay">Choose Delay: </label>
-      <select name="delay" id="delay">
-        <option value="0.008">0.008</option>
-        <option value="0.007">0.007</option>
-        <option value="0.006">0.006</option>
-        <option value="0.005">0.005</option>
-        <option value="0.009">0.009</option>
-        <option value="0.01">0.01</option>
-      </select>
-
-      <br>
-
-      <!-- Run Button -->
-      <style>
-      .btn {
-        border: none;
-        background-color: rgb(73, 204, 12);
-        padding: 14px 28px;
-        font-size: 16px;
-        cursor: pointer;
-        display: inline-block;
-      }
-
-      .btn:hover {background: rgb(4, 90, 26);}
-
-      .run {color:run;}
-      </style>
-      <button class="btn success" onclick="location.href='{% url 'run_conveyor' %}'">Run</button>
-
-      <!-- Run Button -->
-      <style>
-      .btn {
-        border: none;
-        background-color: rgb(73, 204, 12);
-        padding: 14px 28px;
-        font-size: 16px;
-        cursor: pointer;
-        display: inline-block;
-      }
-
-      .btn:hover {background: rgb(4, 90, 26);}
-
-      .run {color:run;}
-      </style>
-      <button class="btn success" onclick="location.href='{% url 'stop_conveyor' %}'">Stop</button>
-      
-        
-
-    </div>
-
-    <!-- CONVEYOR SENSOR -->
-    <div class="box text-center">
-      <h2><p style="text-align:center;background-color:rgb(209, 195, 195); width:300px">Speed Sensor Output</p></h2>
-        
-        <!-- Run Button -->
-        <style>
-        .btn {
-          border: none;
-          background-color: rgb(73, 204, 12);
-          padding: 14px 28px;
-          font-size: 16px;
-          cursor: pointer;
-          display: inline-block;
-        }
-
-        .btn:hover {background: rgb(4, 90, 26);}
-
-        .run {color:run;}
         </style>
-        
 
         <button class="btn success" onclick="location.href='{% url 'script3' %}'">Run</button>
       
-        <!-- RPM Count -->
+      <!-- RPM Count Label-->
       <form action="/action_page.php">
         <label for="quantity"><br>RPM Count:</label>
         <input type="text" id="quantity" name="quantity" style="width: 8.5em" disabled>
@@ -270,7 +255,7 @@
     <video src="../../../media/ConveyorBelt.mp4" width="330" height="275" controls loop muted poster="../../../media/ConveyorThumbnail.jpeg"></video>
   </div>
 
-    <!-- ROW 1 ENDS -->
+
     </div> 
     <br>
     <br>
@@ -280,17 +265,12 @@
       <div class="box;" width="650px">
               <div class="content-section">
                 <h3 style="text-align:center">Testbed Schematic</h3>
-                <img src="../../media/schematic.jpg" style="height:325px ; width:600px;">   
+                <img src="../../media/TestBed_Schematic.png" style="height:325px ; width:600px;">   
       </div>
 
     </div>
 </div>
 
-<br>
-<!-- <h4 style="text-align:center;">NOTES</h4>  
-      <p style="text-align:center;">1. Force refresh: Ctrl+F5 (removes selected files)</p> -->
-<!-- COMMAND LINE INTERFACE -->
-      
 </body>
 </html>
 {% endblock content %}
