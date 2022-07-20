@@ -102,9 +102,11 @@ You have now entered the Web Interface Page. If the page prompts you to **log in
 
 ___
 
-## **INSTRUCTIONS TO RUN THE SETUP**
+## **INSTRUCTIONS TO RUN THE SERVER**
 
-Make sure that you have logged in.
+Make sure that you have logged in. 
+
+*Also, NOTE that this procedure must be followed only for the existing robotarm+conveyor system (as of 20 July 2022). There might be changes in method of execution while integrating a new robot into the Testbed.*
 
 "Add image of web interface"
 
