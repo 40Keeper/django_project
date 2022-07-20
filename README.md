@@ -15,7 +15,7 @@ Change to the directory **newproject** under home
     cd ~
     cd newproject
 ```
-
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic1.png)
 Activate the **virtual environment** with the help of source command. ***Make sure to do this every time, as without activating the virtual environment, Django will not work.***
 ```bash
     source my_env/bin/activate
