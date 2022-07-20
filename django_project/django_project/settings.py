@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 # from ensurepip import bootstrap
 from pathlib import Path
-
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
