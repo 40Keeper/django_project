@@ -45,7 +45,7 @@ ___
 
 ## Connecting server to the network
 
-* Connect the Host computer of Web Interface to the network switch.
+* Connect the Host computer of Web Interface to the network switch physically via Ethernet cable.
 
 ![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic4.png)
 
@@ -55,11 +55,11 @@ ___
 
 
 * Open the "Wired" dialog box from the gear icon.
-* Go to IPv4
 
 ![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic6.png)
 
 
+* Go to IPv4
 * Select "Manual"
 * Enter the Address as 10.114.10.80
 * Enter the Netmask as 255.255.255.0
@@ -69,8 +69,8 @@ ___
 
 * Apply changes and close
 * Turn your Wired network connection OFF and ON.
-* 
 
+## To access the internet
 * If you wish to access the internet, then connect the ethernet cable to a server with Internet access.
 * Go to "Wired Setttings > IPv4" and select the option "Automatic (DHCP)"
 * Turn your Wired network connection OFF and ON.
@@ -111,6 +111,9 @@ After logging in, you will be directed to the web interface.
 1. ```cd python ```
 1. ```python robot_arm_server.py```
 
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic8.png)
+
+
 ROBOT ARM SERVER IS NOW RUNNING!
 
 
@@ -123,6 +126,9 @@ ROBOT ARM SERVER IS NOW RUNNING!
 1. ```cd python ```
 1. ```python conveyor_server.py```
 
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic9.png)
+
+
 CONVEYOR BELT SERVER IS NOW RUNNING!
 
 >STEP-3: To run the RPM Sensor Server files- 
@@ -133,6 +139,9 @@ CONVEYOR BELT SERVER IS NOW RUNNING!
 1. Once you see "```pi@hallsensor```" on the terminal, you have now entered the Raspberry Pi.
 1. ```cd python ```
 1. ```python sensor_server.py```
+
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic10.png)
+
 
 RPM SENSOR SERVER IS NOW RUNNING!
 ___
