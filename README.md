@@ -100,8 +100,6 @@ localhost:8000
 
 You have now entered the Web Interface Page. If the page prompts you to **log in**, then you have executed everything correctly!
 
----
-**ADD IMAGES ABOUT "LOGIN PAGE" AND "QUIT SERVER WITH CTRL-C" THINGIES**
 ___
 
 ## **INSTRUCTIONS TO RUN THE SETUP**
@@ -112,7 +110,7 @@ Make sure that you have logged in.
 
 After logging in, you will be directed to the web interface.
 
->STEP-1: To run the Robot Arm Server files- 
+### STEP-1: To run the Robot Arm Server files- 
 1. Open a new terminal
 1. ```ssh pi@10.114.10.85```
 
@@ -127,7 +125,7 @@ After logging in, you will be directed to the web interface.
 ROBOT ARM SERVER IS NOW RUNNING!
 
 
->STEP-2: To run the Conveyor Belt Server files- 
+### STEP-2: To run the Conveyor Belt Server files- 
 1. Open a new terminal
 1. ```ssh pi@10.114.10.86```
 
@@ -141,7 +139,7 @@ ROBOT ARM SERVER IS NOW RUNNING!
 
 CONVEYOR BELT SERVER IS NOW RUNNING!
 
->STEP-3: To run the RPM Sensor Server files- 
+### STEP-3: To run the RPM Sensor Server files- 
 1. Open a new terminal
 1. ```ssh pi@10.114.10.87```
 
