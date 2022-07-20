@@ -42,7 +42,17 @@ Terminal will print a few lines of output ending with **"Quit the server with CO
 ***Keep this terminal running and DO NOT close it.***
 
 ___
+## Login Details
 
+You will be automatically redirected to a Log In page
+
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/LoginPage.png)
+
+
+Log In into the interface with the help of user credentials as provided above.
+
+
+___
 ## Connecting server to the network
 
 * Connect the Host computer of Web Interface to the network switch physically via Ethernet cable.
@@ -150,7 +160,26 @@ ___
 The client scripts have been stored on the Host computer of the Web Server, and will be executed by hitting the "Run" buttons on the interface. 
 
 * Under the "Robotic Arm Command", on hitting the "Run" button, Robotic Arm will start working.
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic11.png)
+
+
 * Under the "Conveyor Belt Command", on hitting the "Run" button, Conveyor Belt will start working.
 * You may choose Delay for the belt from the given options in the drop down menu. If you select a different value of Delay and execute the program again, the conveyor should move with a different speed.
-* Under the "Speed Sensor Output", on hitting the "Run" button, the RPM Sensor starts counting and dynamically updates the data every rotation into a MySQL Table.
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic12.png)
+
+
+* Under the "Speed Sensor Output", on hitting the "Run" button, the RPM Sensor starts counting.
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic13.png)
+
+*  The function triggerred by hitting "Run" button wil dynamically update the RPM data at every rotation of conveyor motor into a MySQL Table.
+*  In order to access the SQL Table, entr the following URL in a new browser page and hit ENTER.
+```
+localhost/phpmyadmin
+```
+* Log In into PHPMyAdmin with the same credentials as above.
+* Go to ICS_Testbed > RPM_Count_Table
+* REFRESH the page to see latest entries of RPM Value from the sensor.
+* NOTE:- Set the "Sort by key" option tp "PRIMARY (DESC)" to see the latest entries at the top of the page.
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/SQL.png)
+
 
