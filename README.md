@@ -69,6 +69,7 @@ ___
 
 * Apply changes and close
 * Turn your Wired network connection OFF and ON.
+* 
 
 * If you wish to access the internet, then connect the ethernet cable to a server with Internet access.
 * Go to "Wired Setttings > IPv4" and select the option "Automatic (DHCP)"
