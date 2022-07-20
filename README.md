@@ -182,4 +182,12 @@ localhost/phpmyadmin
 * NOTE:- Set the "Sort by key" option tp "PRIMARY (DESC)" to see the latest entries at the top of the page.
 ![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/SQL.png)
 
+___
 
+## ACCESSING IMPORTANT FILES
+
+1. **blog/views.py**- Contains the functions responsible for execution of Client scripts- under functions "runbutton1", "stopbutton1", "runbutton2", "stopbutton2", "runbutton3". It also contains initialization of execution of commands into the MySQL Database.
+2. **blog/templates/blog/home.html"**- Contains the frontend functionality to the Web Interface.
+3. **django_project/urls.py**- Contains access to all URLs, where they would be redirected to, and functions to be executed upon redirecting.
+4. **blog/templates/blog/base.html"**- A base template from which other .html files inherit.
+5. **django_project/settings.py**- Contains basic configurations and additions based on apps included. 
