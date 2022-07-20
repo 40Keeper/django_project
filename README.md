@@ -22,6 +22,8 @@ Activate the **virtual environment** with the help of source command. ***Make su
 ```bash
     source my_env/bin/activate
 ```
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic2.png)
+
 
 From **newproject**, go to the directory containing the Django Project
 ```bash
@@ -34,6 +36,9 @@ To **run the django_server**, execute the following command in **django_project*
 ```
 Terminal will print a few lines of output ending with **"Quit the server with CONTROL-C"**. 
 
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic3.png)
+
+
 ***Keep this terminal running and DO NOT close it.***
 
 ___
@@ -41,15 +46,30 @@ ___
 ## Connecting server to the network
 
 * Connect the Host computer of Web Interface to the network switch.
+
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic4.png)
+
+
 * Open "Wired Settings"
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic5.png)
+
+
 * Open the "Wired" dialog box from the gear icon.
 * Go to IPv4
+
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic6.png)
+
+
 * Select "Manual"
 * Enter the Address as 10.114.10.80
 * Enter the Netmask as 255.255.255.0
+
+![alt text](https://github.com/40Keeper/django_project/blob/master/README_Images/Pic7.png)
+
+
 * Apply changes and close
 * Turn your Wired network connection OFF and ON.
-* NEED TO ADD PICS FOR THIS
+
 * If you wish to access the internet, then connect the ethernet cable to a server with Internet access.
 * Go to "Wired Setttings > IPv4" and select the option "Automatic (DHCP)"
 * Turn your Wired network connection OFF and ON.
